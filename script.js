@@ -4,8 +4,8 @@ const formElement=document.getElementById("myForm")
 formElement.addEventListener('submit',function(event){
     const isValid =
         validationEmpty() &&
-        vaildPass() &&
         validEmail()&&
+        vaildPass()&&
         confirmPassword();
 
     if (!isValid) {
@@ -28,11 +28,11 @@ function validEmail(){
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if(!emailPattern.test(emailInput.value)){
         showAlert("Please enter a valid email address.")
-        emailInput.style.borderBottom="red solid 2px"
+        emailInput.style.border="red solid 2px"
         return false
     }
     else{
-        emailInput.style.borderBottom="white solid 2px"
+        emailInput.style.border="white solid 2px"
         return true
     }
 }
@@ -51,17 +51,16 @@ function validationEmpty(){
     }
     return true
 }
-
 function vaildPass(){
     let pass=document.getElementById("input-password").value 
 if(pass.length<10){
         console.log("error")
-        document.getElementById("input-password").style.borderBottom="red solid 2px"
+        document.getElementById("input-password").style.border="red solid 2px"
         showAlert("Invalid password it must be more than 10 numbers or characters")
         return false
     }
     else{
-        document.getElementById("input-password").style.borderBottom="white solid 2px"
+        document.getElementById("input-password").style.border="white solid 2px"
         return true
     }
 }
@@ -70,14 +69,14 @@ function confirmPassword(){
 let pass=document.getElementById("input-password").value 
 let confrimPass =document.getElementById("confirm-password").value
     if(pass!=confrimPass){
-        document.getElementById("input-password").style.borderBottom="red solid 2px"
-        document.getElementById("confirm-password").style.borderBottom="red solid 2px"  
+        document.getElementById("input-password").style.border="red solid 2px"
+        document.getElementById("confirm-password").style.border="red solid 2px"  
         showAlert("The password doesnot match")
         return false
     }
     else{
-        document.getElementById("input-password").style.borderBottom="white solid 2px"
-        document.getElementById("confirm-password").style.borderBottom="white solid 2px"
+        document.getElementById("input-password").style.border="white solid 2px"
+        document.getElementById("confirm-password").style.border="white solid 2px"
         return true
     }
 }
