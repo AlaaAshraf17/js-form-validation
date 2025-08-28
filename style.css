@@ -12,6 +12,7 @@ h1,h2,h3,h4,h5,h6 {
 body {
     margin: 0; 
     padding: 0;
+    min-height: 100vh;
     background-color: #f9f9f9;
 }
 
@@ -154,6 +155,7 @@ body {
 .contaner {
     margin: 70px 70px;
     max-width: 80%;
+    margin-top: 8%;
 }
 .contaner h1 {
     margin-bottom: 20px;
@@ -168,8 +170,26 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
     text-align: center;
-}
-.cat img {
+    opacity: 0;
+    transform: transform 0.3s ease,translateX(-200px), box-shadow 0.3s ease; 
+    animation: backInLeft 3s ease forwards;
+    }
+    
+    @keyframes backInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px) scale(0.7);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(20px) scale(1.05); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+    }
+    .cat img {
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 50%;
@@ -279,3 +299,235 @@ body {
     transform: scale(1.05);   
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
+.middle {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("assets/yellowbackground.png"); 
+    background-size: cover;
+    background-position: center;
+    min-height: 250px; 
+    border-radius: 8px;
+}
+
+.event-box {
+    text-align: center;
+    color: #2D2C3C;
+    max-width: 80%;
+}
+
+.btn2 {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-2 {
+    padding: 10px 20px;
+    background-color: #2D2C3C; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-2:hover {
+    background-color: #44435a;
+}
+
+
+@media (max-width:768px) {
+    .middle,.end {
+        min-height: 200px; 
+        padding: 20px 10px;
+    }
+
+    .event-box h2 {
+        font-size: 1rem;
+    }
+
+    .event-box p {
+        font-size: 0.9rem;
+    }
+
+    .btn-2 {
+        font-size: 14px;
+        padding: 6px 14px;
+    }
+}
+.end{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("assets/CreateEventCTA.png"); 
+    background-size: cover;
+    background-position: center;
+    min-height: 170px;
+    border-radius: 8px;
+    margin-top: 90px;
+    flex-wrap: wrap;
+}
+.event-craete-box{
+    text-align:center;
+    color: rgb(239, 239, 130);
+    max-width: 80%;
+    padding: 20px;
+}
+
+.btn-3 {
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 15px 40px;
+    background-color: rgb(239, 239, 130); 
+    color: #44435a;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-3:hover {
+    background-color: #44435a;
+    color: white;
+}
+.newsletter{
+    background-color: #FFD700;
+    max-width: 100%;
+    margin-top: 3%;
+    min-height: 110px;
+}
+.sub-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-box{
+    margin-top: 20px;
+    margin-right: 20%;
+    padding: 20px;
+}
+#email{
+    padding: 15px 25px;
+    border: 1px solid #ccc;
+    border-radius: 6px 0 0 6px; 
+    outline: none;
+    font-size: 16px;
+
+}
+.btn-4{
+    padding: 15px 25px;
+    border: none;
+    background-color: #44435a;
+    color: white;
+    font-size: 16px;
+    border-radius: 0 6px 6px 0; 
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn-4:hover {
+    background-color: rgb(239, 239, 130); 
+    color: black;
+    transform: scale(1.05);   
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+@media (max-width:768px) {
+        .sub-box {
+            flex-direction: column;
+            align-items: flex-start; 
+        }
+        .sub-input {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .text-box{
+            margin: 0px;
+        }
+        .text-box h2{
+            font-size: 1rem;
+        }
+        #email, .btn-4 {
+            border-radius: 6px; 
+        }
+}
+
+.footer {
+    background: #2b2940; 
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-col h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #FFD700; 
+}
+
+.app-buttons img {
+    width: 140px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 30px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 13px;
+    color: #bbb;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+    .app-buttons img {
+        margin: 10px auto;
+    }
+}
+
+
+

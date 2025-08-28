@@ -6,6 +6,7 @@
         <title>Document</title>
     </head>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <body>
     <nav class="nav-bar">
     <div class="logo">
@@ -32,14 +33,14 @@
 
     <div id="nav-links">
         <a href="./index.html" class="active">Home</a>
-        <a href="./events.html">Events</a>
+        <a href="#events">Events</a>
         <a href="./about.html">About</a>
         <a href="./contact.html">Contact</a>
     </div>
 
     <div id="nav-icons">
         <a href="./create-event.html">Create Event</a>
-        <a href="./tickets.html">🎟 Tickets</a>
+        <a href="./tickets.html">Tickets</a>
         <a href="./login.html">Login</a>
         <a href="./register.html"> Register</a>
     </div>
@@ -54,38 +55,45 @@
             <h3 class="text-3">Register with us to get more details</h3>
         </div>
         </div>
+    <section class="contaner">
+    <h1>Explore Categories</h1>
+    <div class="categories" data-aos="fade-right"  data-aos-offset="200"data-aos-easing="ease-in-sine">
 
-        <section class="contaner">
-            <h1>Explore Categories</h1>
-            <div class="categories">
-            <div class="cat">
-                <img src="./assets/Image1.png" alt="" srcset="">
-                <span>Entertainment</span>
-            </div>
-            <div class="cat">
-                <img src="./assets/Image6.png" alt="" srcset="">
-                <span>Educational & Business</span>
-            </div>
-            <div class="cat">
-                <img src="./assets/Image2.png" alt="" srcset="">
-                <span>Cultural & Arts</span>
-            </div>
-            <div class="cat">
-                <img src="./assets/Image3.png" alt="" srcset="">
-                <span>Sports & Fitness</span>
-            </div>
-                <div class="cat">
-                <img src="./assets/Image4.png" alt="" srcset="">
-                <span>Technology & Innovation</span>
-            </div>
-            <div class="cat">
-                <img src="./assets/Image5.png" alt="" srcset="">
-                <span>Travel & Adventure</span>
-            </div>
-            </div>
-        </section>
+        <div class="cat" >
+        <img src="./assets/Image1.png" alt="">
+        <span>Entertainment</span>
+        </div>
 
-        <section class="cards">
+        <div class="cat" >
+        <img src="./assets/Image6.png" alt="">
+        <span>Educational & Business</span>
+        </div>
+
+        <div class="cat" >
+        <img src="./assets/Image2.png" alt="">
+        <span>Cultural & Arts</span>
+        </div>
+
+        <div class="cat">
+        <img src="./assets/Image3.png" alt="">
+        <span>Sports & Fitness</span>
+        </div>
+
+        <div class="cat" >
+        <img src="./assets/Image4.png" alt="">
+        <span>Technology & Innovation</span>
+        </div>
+
+        <div class="cat" >
+        <img src="./assets/Image5.png" alt="">
+        <span>Travel & Adventure</span>
+        </div>
+
+    </div>
+    </section>
+
+
+        <section class="cards" id="events">
             <h1>Upcoming events</h1>
             <div class="cardsContents">
                 <div class="card">
@@ -241,17 +249,216 @@
         <div class="btn">
             <button class="btn-1">See More</button>
         </div>
-    </body>
-    
-    <script>
-    const toggleBtn = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
-    const navIcons = document.getElementById("nav-icons");
 
-    toggleBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
-        navIcons.classList.toggle("show");
-    });
-</script>
+
+        <section class="suggetions">
+        <div class="middle">
+            <div class="event-box">
+            <h2>Events specially curated for you!</h2>
+            <p>Get event suggestions tailored to your interests! Don't let your favorite events slip away.</p>
+            <div class="btn2">
+                <button class="btn-2">Get Started</button>
+            </div>
+            </div>
+        </div>
+        </section>
+
+
+
+
+        <section class="cards">
+            <h1>Trending Events around the World</h1>
+            <div class="cardsContents">
+                <div class="card">
+                    <div class="type">
+                        Educational & Business
+                    </div>
+                <img src="./assets/e4.png" alt="" srcset="" >
+                <div class="date">
+                    <div class="date-box">
+                    <span class="month">DEC</span>
+                    <span class="day">08</span>
+                    </div>
+                <div class="text">
+                <h3>Cricket Business Meetup</h3>
+                <p>Play The Turf, Malad, Mumbai</p>
+                <p>6:30 PM - 9:30 PM</p>
+                </div>
+                </div>
+                </div>
+
+
+                <div class="card">
+                <div class="type">
+                        Travel & Adventure
+                    </div>
+                <img src="./assets/e3.png" alt="" srcset="">
+                <div class="date">
+                    <div class="date-box">
+                    <span class="month">Nov</span>
+                    <span class="day">25-26</span>
+                    </div>
+                <div class="text">
+                <h3>Lakeside Camping at Pawna</h3>
+                <p>Adventure Geek - Explore the Unexplored, Mumbai</p>
+                <p>8:30 AM - 7:30 PM</p>
+                </div>
+                </div>
+                </div>
+
+                <div class="card">
+                    <div class="type">
+                    Technology & Innovation
+                    </div>
+                <img src="./assets/season.png" alt="" srcset="">
+                <div class="date">
+                    <div class="date-box">
+                    <span class="month">Nov</span>
+                    <span class="day">29</span>
+                    </div>
+                <div class="text">
+                <h3>HackerX - Zurich (Full-Stack) 11/29 (Virtual)</h3>
+                <p>Online</p>
+                <p>11:30 AM - 1:30 PM</p>
+                </div>
+                </div>
+                </div>
+
+
+                
+                    <div class="card">
+                    <div class="type">
+                    Educational & Business
+                    </div>
+                <img src="./assets/e2.png" alt="" srcset="">
+                <div class="date">
+                    <div class="date-box">
+                    <span class="month">JAN</span>
+                    <span class="day">13</span>
+                    </div>
+                <div class="text">
+                <h3>The Road to Jobs and Internships: Starting with LinkedIn Webinar</h3>
+                <p>Online</p>
+                <p>6 pM - 7:30 PM</p>
+                </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="btn">
+            <button class="btn-1">See More</button>
+        </div>
+
+        <section class="event-create">
+        <div class="end">
+            <div class="event-craete-box">
+            <h1>Create an event with Eventify</h1>
+            <h4>Got a show, event, activity or a great experience? Partner with us & get listed on Eventify</h4>
+            <div class="btn3">
+                <button class="btn-3">Create event</button>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <div class="newsletter">
+            <div class="sub-box">
+                <div class="text-box">
+                    <h2>Subscribe to our Newsletter</h2>
+                    <p>Receive our weekly newsletter & updates with new events from <br> your favourite organizers & venues.</p>
+                </div>
+                <div class="sub-input">
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <button class="btn-4">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+            <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+        <h4>Company Info</h4>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        </div>
+
+
+        <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+            <li><a href="#">Account Support</a></li>
+            <li><a href="#">Listing Events</a></li>
+            <li><a href="#">Event Ticketing</a></li>
+            <li><a href="#">Ticket Purchase Terms & Conditions</a></li>
+        </ul>
+        </div>
+
+
+        <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+            <li><a href="#">Concerts & Gigs</a></li>
+            <li><a href="#">Festivals & Lifestyle</a></li>
+            <li><a href="#">Business & Networking</a></li>
+            <li><a href="#">Food & Drink</a></li>
+            <li><a href="#">Performing Arts</a></li>
+            <li><a href="#">Sports & Outdoors</a></li>
+            <li><a href="#">Exhibitions</a></li>
+            <li><a href="#">Workshops, Conferences & Classes</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-col">
+        <h4>Follow Us</h4>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">YouTube</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-col">
+        <h4>Download The App</h4>
+        <div class="app-buttons">
+            <a href="#"><img src="assets/googleplay.png" alt="Google Play"></a>
+            <a href="#"><img src="assets/app-store3.png" alt="App Store"></a>
+        </div>
+        </div>
+    </div>
+
+    <hr>
+    <p class="footer-bottom">©2023 Eventify. All rights reserved.</p>
+    </footer>
+
+
+            </body>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+            <script>
+            AOS.init({
+                // duration: 1000, 
+                once: false 
+            });
+            </script>
+                
+            <script>
+            const toggleBtn = document.getElementById("menu-toggle");
+            const navLinks = document.getElementById("nav-links");
+            const navIcons = document.getElementById("nav-icons");
+
+            toggleBtn.addEventListener("click", () => {
+                navLinks.classList.toggle("show");
+                navIcons.classList.toggle("show");
+            });
+        </script>
 
     </html>
